@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr" class="auth-pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#062f20">
+  <title>Yatırımcı Ön Talebi | ETDİOSB</title>
+  <link rel="icon" href="assets/etdiosb-logo.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="auth.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="demo-ribbon">DEMO SÜRÜMÜ · Bu formdaki bilgiler kaydedilmez veya gönderilmez</div>
+  <div class="topline">JEOTERMAL ODAKLI MODERN SERA ÜRETİMİ · VİZYON ESKİŞEHİR 2036</div>
+  <header class="site-header">
+    <div class="header-main">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/etdiosb-logo.webp" alt="ETDİOSB logosu" width="68" height="68"><span class="brand-copy"><span class="brand-name">ETDİOSB</span><span class="brand-full">Eskişehir Tarıma Dayalı İhtisas Organize Sanayi Bölgesi</span></span></a>
+      <div class="header-actions"><a class="desktop-application" href="index.html">Ana Sayfa <span>←</span></a><button class="mobile-menu-button" type="button" aria-label="Menüyü aç" aria-controls="mobile-drawer" aria-expanded="false"><span></span></button></div>
+    </div>
+    <div class="desktop-nav-wrap"><nav class="desktop-nav"><a href="index.html#kurumsal">Kurumsal</a><a href="index.html#ekosistem">Üretim Ekosistemi</a><a href="index.html#jeotermal">Jeotermal Enerji</a><a href="index.html#yatirim">Yatırım Avantajları</a><a href="index.html#altyapi">Altyapı</a><a href="index.html#surec">Süreç</a><a href="index.html#iletisim">İletişim</a></nav></div>
+    <a class="mobile-application-bar" href="index.html">← Ana Sayfaya Dön</a>
+  </header>
+  <div class="drawer-backdrop" data-menu-close></div>
+  <aside class="drawer" id="mobile-drawer" aria-hidden="true"><div class="drawer-head"><img src="assets/etdiosb-logo.webp" alt="" width="62" height="62"><span><strong>ETDİOSB</strong><small>Yatırımcı Ön Talep Sistemi</small></span><button class="drawer-close" type="button" data-menu-close aria-label="Menüyü kapat">×</button></div><nav class="drawer-nav"><a href="index.html"><b>01</b><span><strong>Ana Sayfa</strong><small>Proje tanıtımına dön</small></span><span>→</span></a><a href="index.html#jeotermal"><b>02</b><span><strong>Jeotermal Enerji</strong><small>Enerji modelini incele</small></span><span>→</span></a><a href="index.html#surec"><b>03</b><span><strong>Yatırım Süreci</strong><small>Başvuru adımlarını incele</small></span><span>→</span></a><a href="#" data-logout><b>04</b><span><strong>Güvenli Çıkış</strong><small>Demo oturumunu kapat</small></span><span>→</span></a></nav></aside>
+
+  <main>
+    <section class="form-hero">
+      <div class="container"><a class="back-link" href="index.html">← ETDİOSB ana sayfası</a><div class="form-hero-grid"><div><div class="eyebrow">Yatırımcı İlişkileri</div><h1>Ön talebinizi oluşturun.</h1><p>Yatırım ölçeğinizi, üretim alanınızı ve altyapı beklentilerinizi paylaşın. Bu demo formu, canlı sistemde toplanacak bilgi yapısını göstermek amacıyla hazırlanmıştır.</p></div><div class="trust-box"><strong>Jeotermal odaklı yatırım planlaması</strong><span>Enerji ihtiyacı, alan büyüklüğü, yatırım bütçesi ve istihdam hedefi birlikte değerlendirilir.</span></div></div></div>
+    </section>
+
+    <section class="form-section">
+      <div class="container form-layout">
+        <div>
+          <form class="application-form" id="application-form" novalidate>
+            <div class="form-block"><div class="form-block-head"><b>01</b><h2>Başvuru sahibi</h2></div><div class="form-grid">
+              <div class="field"><label for="applicant-type">Başvuru türü *</label><select id="applicant-type" name="applicantType" required><option value="">Seçiniz</option><option>Şirket / Tüzel Kişi</option><option>Gerçek Kişi</option><option>Kooperatif / Birlik</option><option>Kamu Kurumu</option></select></div>
+              <div class="field"><label for="company">Firma / Kuruluş adı *</label><input id="company" name="company" autocomplete="organization" required placeholder="Firma unvanı"></div>
+              <div class="field"><label for="tax-number">Vergi / T.C. kimlik no *</label><input id="tax-number" name="taxNumber" inputmode="numeric" required placeholder="Numara"></div>
+              <div class="field"><label for="contact-name">Yetkili kişi *</label><input id="contact-name" name="contactName" autocomplete="name" required placeholder="Ad soyad"></div>
+              <div class="field"><label for="email">E-posta *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="ornek@firma.com"></div>
+              <div class="field"><label for="phone">Telefon *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+90 5xx xxx xx xx"></div>
+              <div class="field full"><label for="city">İl / ülke *</label><input id="city" name="city" autocomplete="address-level1" required placeholder="Örn. Eskişehir / Türkiye"></div>
+            </div></div>
+
+            <div class="form-block"><div class="form-block-head"><b>02</b><h2>Yatırım profili</h2></div><div class="form-grid">
+              <div class="field"><label for="investment-type">Yatırım konusu *</label><select id="investment-type" name="investmentType" required><option value="">Seçiniz</option><option>Jeotermal Isıtmalı Modern Sera</option><option>Fide / Tohum Üretimi</option><option>Ürün İşleme ve Paketleme</option><option>Soğuk Hava Deposu</option><option>Lojistik ve Dağıtım</option><option>Tarım Teknolojileri / Ar-Ge</option><option>Diğer Destek Hizmeti</option></select></div>
+              <div class="field"><label for="area">Talep edilen alan *</label><select id="area" name="area" required><option value="">Seçiniz</option><option>10 dekardan az</option><option>10–25 dekar</option><option>26–50 dekar</option><option>51–100 dekar</option><option>100 dekar üzeri</option></select></div>
+              <div class="field"><label for="budget">Tahmini yatırım bütçesi *</label><select id="budget" name="budget" required><option value="">Seçiniz</option><option>25 milyon TL altı</option><option>25–100 milyon TL</option><option>100–250 milyon TL</option><option>250–500 milyon TL</option><option>500 milyon TL üzeri</option></select></div>
+              <div class="field"><label for="employment">Öngörülen istihdam *</label><input id="employment" name="employment" type="number" min="1" required placeholder="Kişi sayısı"></div>
+              <div class="field"><label for="experience">Üretim deneyimi</label><select id="experience" name="experience"><option>Yeni yatırımcı</option><option>1–5 yıl</option><option>6–10 yıl</option><option>10 yıldan fazla</option></select></div>
+              <div class="field"><label for="energy">Enerji tercihi *</label><select id="energy" name="energy" required><option selected>Jeotermal merkezi ısıtma</option><option>Hibrit enerji sistemi</option><option>Teknik görüşmede belirlenecek</option></select></div>
+              <div class="field full"><label for="summary">Proje özeti *</label><textarea id="summary" name="summary" required minlength="30" placeholder="Planlanan ürünler, üretim kapasitesi, teknoloji yaklaşımı ve hedef pazar hakkında kısa bilgi veriniz."></textarea></div>
+            </div></div>
+
+            <div class="form-block"><div class="form-block-head"><b>03</b><h2>Beyan ve onay</h2></div><div class="stack">
+              <label class="check"><input type="checkbox" required> <span>Verdiğim bilgilerin doğru ve güncel olduğunu, bu kaydın kesin parsel tahsisi veya yatırım teşviki taahhüdü oluşturmadığını kabul ediyorum.</span></label>
+              <label class="check"><input type="checkbox" required> <span>Bu sürümün tanıtım demosu olduğunu ve forma girilen bilgilerin gerçek bir veritabanına kaydedilmediğini anladım.</span></label>
+            </div><div class="submit-row"><p class="submit-note">Form, yalnızca tarayıcınızda kontrol edilir. Gönderim sonunda örnek bir başvuru referansı üretilir.</p><button class="button" type="submit">Demo Başvuruyu Tamamla <span>→</span></button></div></div>
+          </form>
+          <section class="success-panel" id="success-panel" aria-live="polite"><div class="success-icon">✓</div><h2>Demo başvurunuz hazır.</h2><div class="reference" id="application-reference">ETD-2026-DEMO</div><p>Bu referans yalnızca gösterim amaçlıdır. Bilgileriniz kaydedilmedi ve herhangi bir kuruma gönderilmedi.</p><div class="button-row" style="justify-content:center"><button class="button" type="button" id="new-application">Yeni Demo Başvuru</button><a class="button button-outline" style="color:#0a4732;border-color:#b7d7c3;background:#fff" href="index.html">Ana Sayfa</a></div></section>
+        </div>
+        <aside class="form-aside"><div class="aside-card"><h3>Başlamadan önce</h3><p>Ön değerlendirme için aşağıdaki bilgileri hazırlamanız yeterlidir.</p><div class="aside-list"><span>• Yatırım konusu ve kapasite</span><span>• Talep edilen alan büyüklüğü</span><span>• Tahmini bütçe ve istihdam</span><span>• Enerji ve altyapı beklentileri</span></div></div><div class="aside-card light"><h3>Önemli not</h3><p>Canlı başvuru sistemi devreye alındığında KVKK aydınlatma metni, açık rıza yönetimi, güvenli veri tabanı ve yetkili personel paneli ayrıca kurulmalıdır.</p></div></aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-bottom" style="padding-top:0"><span>© 2026 ETDİOSB · Demo başvuru sistemi</span><a href="#" data-logout>Güvenli Çıkış</a></div></footer>
+</body>
+</html>
